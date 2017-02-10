@@ -20,7 +20,13 @@ class MeditationsListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let imageView = UIImageView(frame: self.view.frame)
+        let image = UIImage(named: "TableView")!
+        imageView.image = image
+        self.view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+        
         readMeditationsAndUpdateUI()
         if meditations.count == 0 {
             data.creadStaticMeditations()

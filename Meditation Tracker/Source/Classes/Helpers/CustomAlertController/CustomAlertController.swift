@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class CustomAlertController {
-
-    func showAlertMessage(vc: UIViewController, titleStr: String, messageStr: String) {
-        let alert = UIAlertController(title: titleStr, message: messageStr, preferredStyle: UIAlertControllerStyle.Alert)
-        vc.presentViewController(alert, animated: true, completion: nil)
-    }
-
-}
+//class CustomAlertController {
+//
+//    func showAlertMessage(vc: UIViewController, titleStr: String, messageStr: String) {
+//        let alert = UIAlertController(title: titleStr, message: messageStr, preferredStyle: UIAlertControllerStyle.Alert)
+//        vc.presentViewController(alert, animated: true, completion: nil)
+//    }
+//
+//}

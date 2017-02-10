@@ -23,6 +23,12 @@ class PredictionViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        let imageView = UIImageView(frame: self.view.frame)
+        let image = UIImage(named: "PredictionViewController")!
+        imageView.image = image
+        self.view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
 
         dailyAmountTextField.delegate = self
         let currentMeditation = (self.tabBarController as? MeditationTabBarController)?.currentMeditation

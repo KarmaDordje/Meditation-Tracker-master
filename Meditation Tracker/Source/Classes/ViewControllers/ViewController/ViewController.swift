@@ -25,6 +25,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let imageView = UIImageView(frame: self.view.frame)
+        let backgroundImage = UIImage(named: "ViewController")!
+        imageView.image = backgroundImage
+        self.view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+        
         let currentMeditation = (self.tabBarController as? MeditationTabBarController)?.currentMeditation
         let image = data.loadMeditationImags(imageName: (currentMeditation?.imageName)!)
         self.nameOfmeditationLableUI.text = currentMeditation?.name

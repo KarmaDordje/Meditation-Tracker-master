@@ -26,12 +26,13 @@ class ProgressViewController: UIViewController {
     }
 
     func setProgressImage(count: Int) {
-        let imageView = progressImageViewUI
-        if count <= 2999 {
-            imageView?.image = #imageLiteral(resourceName: "start")
-        } else if count > 3000 {
-            imageView?.image = #imageLiteral(resourceName: "midle")
-        }
+        
+
+//        if count <= 2999 {
+//            imageView?.image = #imageLiteral(resourceName: "start")
+//        } else if count > 3000 {
+//            imageView?.image = #imageLiteral(resourceName: "midle")
+//        }
 
     }
 

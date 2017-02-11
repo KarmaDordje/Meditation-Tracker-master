@@ -20,6 +20,12 @@ class CreateMeditationViewController: UIViewController, UIImagePickerControllerD
 
        override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let imageView = UIImageView(frame: self.view.frame)
+        let backgroundImage = UIImage(named: "CreatinMeditationControler")!
+        imageView.image = backgroundImage
+        self.view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
 
     @IBAction func saveMeditationButton(_ sender: UIBarButtonItem) {
@@ -35,7 +41,6 @@ class CreateMeditationViewController: UIViewController, UIImagePickerControllerD
         newMeditation.count = Int(currentAmountTextField.text!)!
         newMeditation.id = realm.objects(Meditation.self).count + 1
 
-        // use do-catch
         do {
             try realm.write {
 

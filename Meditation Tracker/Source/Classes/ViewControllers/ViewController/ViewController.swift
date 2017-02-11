@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     var saveData: Meditation!
-
     var data = MeditationData()
+    
+    var malasStep = 0
 
     @IBOutlet weak var imageForMeditationUIImage: UIImageView!
     @IBOutlet weak var nameOfmeditationLableUI: UILabel!
@@ -38,13 +39,15 @@ class ViewController: UIViewController {
         self.countOfmeditationLabelUI.text = String(describing: currentMeditation!.count)
         self.imageForMeditationUIImage.image = image
         self.malasStepButtonUI.setTitle(String(describing: currentMeditation!.malasStep), for: .normal)
+        self.malasStep = (currentMeditation?.malasStep)!
+        
         totalCount = currentMeditation!.count
         }
 
     // MARK: Actions
     @IBAction func add108(_ sender: UIButton) {
 
-        totalCount += 108
+        totalCount += malasStep
 
         countOfmeditationLabelUI.text = String(totalCount)
 

@@ -36,8 +36,13 @@ class ProgressViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-
         super.viewDidLoad()
+        
+        let imageView = UIImageView(frame: self.view.frame)
+        let backgroundImage = UIImage(named: "ViewController")!
+        imageView.image = backgroundImage
+        self.view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
 
 }

@@ -21,11 +21,8 @@ class MeditationsListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imageView = UIImageView(frame: self.view.frame)
-        let image = UIImage(named: "TableView")!
-        imageView.image = image
-        self.view.addSubview(imageView)
-        self.view.sendSubview(toBack: imageView)
+        let imageView = UIImageView(image: UIImage(named: "TableView.jpg"))
+        self.tableView.backgroundView = imageView
         
         readMeditationsAndUpdateUI()
         if meditations.count == 0 {
@@ -59,7 +56,6 @@ class MeditationsListTableViewController: UITableViewController {
 
             if updatedMeditation != nil {
                 // update mode
-
                 do {
                     try realm.write {
                         updatedMeditation.targetAmount = Int(targetAmount!)!
@@ -107,7 +103,7 @@ class MeditationsListTableViewController: UITableViewController {
 
         return 0
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let reuseIdentifier = "MeditationCell"

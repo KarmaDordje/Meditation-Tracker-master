@@ -21,41 +21,8 @@ class ProgressViewController: UIViewController {
         let currentMeditation = (self.tabBarController as? MeditationTabBarController)?.currentMeditation
         selectedMeditationNameLabelUI.text = currentMeditation?.name
         currenCountOfMeditationLabelUI.text = String(describing: currentMeditation!.count)
-        setProgressImage(count: (currentMeditation?.count)!)
-
-    }
-
-    func setProgressImage(count: Int) {
-        
-        let progressImageView = progressImageViewUI
-        if count <= 0 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressStart")
-        } else if count <= 10000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImag1")
-        } else if count < 20000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImag2")
-        } else if count < 30000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg3")
-        } else if count < 40000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg4")
-        } else if count < 50000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg5")
-        } else if count < 60000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg6")
-        } else if count < 70000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg7")
-        } else if count < 80000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg8")
-        } else if count < 90000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg9")
-        } else if count < 100000 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg10")
-        } else if count <= 111111 {
-            progressImageView?.image = #imageLiteral(resourceName: "progressImg11")
-        }
-
-
-
+        ChengingProgressImage.setProgressImage(count: (currentMeditation?.count)!,
+                                               imageView: progressImageViewUI)
 
     }
 

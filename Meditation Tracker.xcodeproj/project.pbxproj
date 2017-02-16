@@ -22,6 +22,7 @@
 		304D91AB1E473C5D008F5A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304D91A91E473C5D008F5A39 /* LaunchScreen.storyboard */; };
 		304D91AC1E473C5D008F5A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304D91AA1E473C5D008F5A39 /* Main.storyboard */; };
 		304D91AE1E473F1D008F5A39 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D91AD1E473F1D008F5A39 /* Meditation.swift */; };
+		FAE8CB171E5375A500260CCC /* ChengingProgressImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8CB161E5375A500260CCC /* ChengingProgressImage.swift */; };
 		FAF1F7FB1E492546007169A1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FAF1F7FA1E492546007169A1 /* .swiftlint.yml */; };
 		FAF1F7FE1E4926D0007169A1 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1F7FD1E4926D0007169A1 /* RealmHelper.swift */; };
 		FAF1F8011E493002007169A1 /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1F8001E493002007169A1 /* CustomAlertController.swift */; };
@@ -59,6 +60,7 @@
 		833E7ED657A0D358239D1C9A /* Pods-Meditation Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meditation Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meditation Tracker/Pods-Meditation Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3DD09DCB7AE7AA8F365822 /* Pods_Meditation_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meditation_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3C737F1E09EBAD00226D76 /* Meditation Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meditation Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE8CB161E5375A500260CCC /* ChengingProgressImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChengingProgressImage.swift; sourceTree = "<group>"; };
 		FAF1F7FA1E492546007169A1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FAF1F7FD1E4926D0007169A1 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		FAF1F8001E493002007169A1 /* CustomAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		304D916D1E4738D2008F5A39 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FAE8CB151E5375A500260CCC /* ChengingProgressImage */,
 				FAF1F7FF1E493002007169A1 /* CustomAlertController */,
 				304D916E1E4738D2008F5A39 /* PredictionDate */,
 			);
@@ -272,6 +275,14 @@
 				FA3C737F1E09EBAD00226D76 /* Meditation Tracker.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE8CB151E5375A500260CCC /* ChengingProgressImage */ = {
+			isa = PBXGroup;
+			children = (
+				FAE8CB161E5375A500260CCC /* ChengingProgressImage.swift */,
+			);
+			path = ChengingProgressImage;
 			sourceTree = "<group>";
 		};
 		FAF1F7FC1E4926D0007169A1 /* RealmHelper */ = {
@@ -443,6 +454,7 @@
 				304D91AE1E473F1D008F5A39 /* Meditation.swift in Sources */,
 				FAF1F8011E493002007169A1 /* CustomAlertController.swift in Sources */,
 				304D91951E4738D2008F5A39 /* ViewController.swift in Sources */,
+				FAE8CB171E5375A500260CCC /* ChengingProgressImage.swift in Sources */,
 				304D91941E4738D2008F5A39 /* ProgressViewController.swift in Sources */,
 				304D91981E473915008F5A39 /* MeditationCellTableViewCell.swift in Sources */,
 				304D919F1E4739CA008F5A39 /* MeditationData.swift in Sources */,
